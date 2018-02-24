@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    image: postgres:alpine
+    environment:
+      POSTGRES_USER:
+      POSTGRES_PASSWORD:
+  web:
+    env_file: .env
+    build: .
+    command: bundle exec rails s -p 5000 -b '0.0.0.0'
+    volumes:
+      - .:/mirror
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
