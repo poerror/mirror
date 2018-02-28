@@ -15,3 +15,9 @@ services:
       - "5000:5000"
     depends_on:
       - db
+  webpacker:
+    build: .
+    env_file: .env
+    command: ./bin/webpack-dev-server
+    ports:
+      - '3035:3035'
