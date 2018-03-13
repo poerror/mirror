@@ -9,5 +9,7 @@ ENV RAILS_ROOT /mirror
 RUN mkdir $RAILS_ROOT
 WORKDIR $RAILS_ROOT
 COPY Gemfile* $RAILS_ROOT/
+COPY package.json yarn.lock $RAILS_ROOT/
 RUN bundle install
+RUN yarn install --pure-lockfile
 COPY . $RAILS_ROOT
