@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: INBOX
+  description: Everything else...
+  color:
+  last_activity_at: 2018-03-17 20:35:25
+
+two:
+  name: Improve English
+  description: Time to improve language
+  color:
+  last_activity_at: 2018-03-17 20:35:25
