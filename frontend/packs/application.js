@@ -2,9 +2,15 @@ import "./application.css";
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Button from 'material-ui/Button';
 
 const Hello = props => (
-  <div>Hello {props.name}!</div>
+  <div>
+    Hello {props.name}!
+    <Button raised color="primary">
+      Check
+    </Button>
+  </div>
 )
 
 document.addEventListener('DOMContentLoaded', () => {

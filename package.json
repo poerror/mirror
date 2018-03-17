@@ -4,9 +4,11 @@
   "dependencies": {
     "@rails/webpacker": "^3.3.1",
     "babel-preset-react": "^6.24.1",
+    "material-ui": "^1.0.0-beta.37",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "typeface-roboto": "^0.0.54"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
