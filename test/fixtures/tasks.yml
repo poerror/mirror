@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  interval: 1
+  duration: 1.5
+  last_activity_at: 2018-03-22 10:31:55
+  priority: 1
+  integer: 
+  longterm: false
+  task: one
+
+two:
+  name: MyString
+  description: MyText
+  interval: 1
+  duration: 1.5
+  last_activity_at: 2018-03-22 10:31:55
+  priority: 1
+  integer: 
+  longterm: false
+  task: two
