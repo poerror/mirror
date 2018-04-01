@@ -17,7 +17,7 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
 
   test "should create task" do
     assert_difference('Task.count') do
-      post tasks_url, params: { task: { description: @task.description, duration: @task.duration, integer: @task.integer, interval: @task.interval, last_activity_at: @task.last_activity_at, longterm: @task.longterm, name: @task.name, priority: @task.priority, task_id: @task.task_id } }
+      post tasks_url, params: { task: { description: @task.description, duration: @task.duration, status: @task.status, interval: @task.interval, last_activity_at: @task.last_activity_at, longterm: @task.longterm, name: @task.name, priority: @task.priority, task_id: @task.task_id } }
     end
 
     assert_redirected_to task_url(Task.last)
@@ -34,7 +34,7 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update task" do
-    patch task_url(@task), params: { task: { description: @task.description, duration: @task.duration, integer: @task.integer, interval: @task.interval, last_activity_at: @task.last_activity_at, longterm: @task.longterm, name: @task.name, priority: @task.priority, task_id: @task.task_id } }
+    patch task_url(@task), params: { task: { description: @task.description, duration: @task.duration, status: @task.status, interval: @task.interval, last_activity_at: @task.last_activity_at, longterm: @task.longterm, name: @task.name, priority: @task.priority, task_id: @task.task_id } }
     assert_redirected_to task_url(@task)
   end
 
