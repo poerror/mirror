@@ -5,6 +5,7 @@ import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 import ProjectList from './ProjectList';
+import TaskList from './TaskList';
 
 const App = () =>
 <Grid container>
@@ -21,6 +22,12 @@ const App = () =>
     <Grid container className="content" justify="center">
       <Grid item xs={10}>
         <ProjectList />
+      </Grid>
+    </Grid>
+
+    <Grid container className="content" justify="center">
+      <Grid item xs={10}>
+        <TaskList />
       </Grid>
     </Grid>
   </Grid>
