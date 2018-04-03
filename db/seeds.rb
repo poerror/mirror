@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 project1 = Project.find_or_create_by(name: "INBOX", description: "Everything else...")
+project1.color = "#721582"
+project1.save
 
   # Simple finished short term task
   project1_task1 = Task.find_or_create_by(
@@ -26,6 +28,8 @@ project1 = Project.find_or_create_by(name: "INBOX", description: "Everything els
   project1_task2.save
 
 project2 = Project.find_or_create_by(name: "Improve English", description: "Time to improve language")
+project2.color = "#52f0a2"
+project2.save
 
   # Long term task
   project2_task1 = Task.find_or_create_by(
@@ -37,6 +41,8 @@ project2 = Project.find_or_create_by(name: "Improve English", description: "Time
   project2_task1.save
 
 project3 = Project.find_or_create_by(name: "Reading", description: "Time for reading books")
+project3.color = "#57baf6"
+project3.save
 
   # Task with multiple subtasks
   project3_task1 = Task.find_or_create_by(
